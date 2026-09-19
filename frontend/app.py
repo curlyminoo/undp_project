@@ -25,7 +25,7 @@ if upload_file is not None:
     if 'df' not in st.session_state:
 
             files = {"file" : (upload_file.name, upload_file.getvalue())}
-            response = requests.post("http://127.0.0.1:8000/upload", files=files)
+            response = requests.post("https://undp-backend-lr9n.onrender.com/upload", files=files)
 
             if response.status_code == 200:
                 data = response.json()
@@ -81,7 +81,7 @@ if upload_file is not None:
                 "fill_missing": fill_missing
                 }
 
-            response = requests.post("http://127.0.0.1:8000/clean", json=payload)
+            response = requests.post("https://undp-backend-lr9n.onrender.com/clean", json=payload)
 
             if response.status_code == 200:
                 result = response.json()
@@ -113,7 +113,7 @@ if upload_file is not None:
                 "data": safe_json_df(df),
                 "columns": selected_col
             }
-            response = requests.post("http://127.0.0.1:8000/convert", json=payload)
+            response = requests.post("https://undp-backend-lr9n.onrender.com/convert", json=payload)
 
             if response.status_code == 200:
                 result = response.json()
@@ -142,7 +142,7 @@ if upload_file is not None:
         count_col = st.selectbox("select a category column to count: ", categorical_columns, key="count_col")
 
         payload = {"data": safe_json_df(df), "count_column": count_col}
-        response = requests.post("http://127.0.0.1:8000/analyze", json=payload)
+        response = requests.post("https://undp-backend-lr9n.onrender.com/analyze", json=payload)
 
         if response.status_code == 200:
             analysis = response.json()
@@ -161,7 +161,7 @@ if upload_file is not None:
         value_col = st.selectbox("Average of: ", numeric_columns, key="value_col")
 
         payload2 = {"data": safe_json_df(df), "group_column": group_col, "value_column": value_col}
-        response2 = requests.post("http://127.0.0.1:8000/analyze", json=payload2)
+        response2 = requests.post("https://undp-backend-lr9n.onrender.com/analyze", json=payload2)
 
         if response2.status_code == 200:
             analysis2 = response2.json()
@@ -188,7 +188,7 @@ if upload_file is not None:
             "y_column": y_col,
             "color_column": color_col
         }
-        scatter_response = requests.post("http://127.0.0.1:8000/scatter", json=scatter_payload)
+        scatter_response = requests.post("https://undp-backend-lr9n.onrender.com/scatter", json=scatter_payload)
 
         if scatter_response.status_code == 200:
             scatter_data = scatter_response.json()
@@ -236,7 +236,7 @@ if upload_file is not None:
                     "target_column": target_col,
                     "feature_columns": feature_cols
                 }
-                train_response = requests.post("http://127.0.0.1:8000/train", json=train_payload)
+                train_response = requests.post("https://undp-backend-lr9n.onrender.com/train", json=train_payload)
 
                 if train_response.status_code == 200:
                     result = train_response.json()
@@ -261,7 +261,7 @@ if upload_file is not None:
 
         if st.button("Predict"):
             predict_payload = {"input_data": input_data}
-            predict_response = requests.post("http://127.0.0.1:8000/predict", json=predict_payload)
+            predict_response = requests.post("https://undp-backend-lr9n.onrender.com/predict", json=predict_payload)
 
             if predict_response.status_code == 200:
                 result = predict_response.json()
