@@ -7,12 +7,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn .preprocessing import LabelEncoder
 from groq import Groq
 import requests
+import os
+
+
+BACKEND_URL = "https://undp-backend-lr9n.onrender.com"
 
 
 def safe_json_df(df):
     return df.astype(object).where(df.notna(), None).to_dict(orient="records")
-
-
 
 
 
@@ -24,24 +26,24 @@ upload_file = st.file_uploader("Uploade your file" ,type= ["csv", "xlsx", "json"
 if upload_file is not None:
     if 'df' not in st.session_state:
 
-            files = {"file" : (upload_file.name, upload_file.getvalue())}
-            response = requests.post("https://undp-backend-lr9n.onrender.com/upload", files=files)
+        files = {"file" : (upload_file.name, upload_file.getvalue())}
+        response = requests.post(f"{BACKEND_URL}/upload", files=files)
 
-            if response.status_code == 200:
-                data = response.json()
+        if response.status_code == 200:
+            data = response.json()
 
-                if "error" in data:
-                    st.error(data["error"])
-                    st.stop()
-
-                else:
-                    st.session_state['df'] = pd.DataFrame(data["data"])
-                    st.session_state['total_rows'] = data["rows"]
-                    st.session_state['total_columns'] = data["columns"]
+            if "error" in data:
+                st.error(data["error"])
+                st.stop()
 
             else:
-                st.error("Failed to connect to the backend server.")
-                st.stop()
+                st.session_state['df'] = pd.DataFrame(data["data"])
+                st.session_state['total_rows'] = data["rows"]
+                st.session_state['total_columns'] = data["columns"]
+
+        else:
+            st.error("Failed to connect to the backend server.")
+            st.stop()
 
     df = st.session_state['df']
 
@@ -81,7 +83,7 @@ if upload_file is not None:
                 "fill_missing": fill_missing
                 }
 
-            response = requests.post("https://undp-backend-lr9n.onrender.com/clean", json=payload)
+            response = requests.post(f"{BACKEND_URL}/clean", json=payload)
 
             if response.status_code == 200:
                 result = response.json()
@@ -113,7 +115,7 @@ if upload_file is not None:
                 "data": safe_json_df(df),
                 "columns": selected_col
             }
-            response = requests.post("https://undp-backend-lr9n.onrender.com/convert", json=payload)
+            response = requests.post(f"{BACKEND_URL}/convert", json=payload)
 
             if response.status_code == 200:
                 result = response.json()
@@ -142,7 +144,7 @@ if upload_file is not None:
         count_col = st.selectbox("select a category column to count: ", categorical_columns, key="count_col")
 
         payload = {"data": safe_json_df(df), "count_column": count_col}
-        response = requests.post("https://undp-backend-lr9n.onrender.com/analyze", json=payload)
+        response = requests.post(f"{BACKEND_URL}/analyze", json=payload)
 
         if response.status_code == 200:
             analysis = response.json()
@@ -161,7 +163,7 @@ if upload_file is not None:
         value_col = st.selectbox("Average of: ", numeric_columns, key="value_col")
 
         payload2 = {"data": safe_json_df(df), "group_column": group_col, "value_column": value_col}
-        response2 = requests.post("https://undp-backend-lr9n.onrender.com/analyze", json=payload2)
+        response2 = requests.post(f"{BACKEND_URL}/analyze", json=payload2)
 
         if response2.status_code == 200:
             analysis2 = response2.json()
@@ -188,7 +190,7 @@ if upload_file is not None:
             "y_column": y_col,
             "color_column": color_col
         }
-        scatter_response = requests.post("https://undp-backend-lr9n.onrender.com/scatter", json=scatter_payload)
+        scatter_response = requests.post(f"{BACKEND_URL}/scatter", json=scatter_payload)
 
         if scatter_response.status_code == 200:
             scatter_data = scatter_response.json()
@@ -236,7 +238,7 @@ if upload_file is not None:
                     "target_column": target_col,
                     "feature_columns": feature_cols
                 }
-                train_response = requests.post("https://undp-backend-lr9n.onrender.com/train", json=train_payload)
+                train_response = requests.post(f"{BACKEND_URL}/train", json=train_payload)
 
                 if train_response.status_code == 200:
                     result = train_response.json()
@@ -261,7 +263,7 @@ if upload_file is not None:
 
         if st.button("Predict"):
             predict_payload = {"input_data": input_data}
-            predict_response = requests.post("https://undp-backend-lr9n.onrender.com/predict", json=predict_payload)
+            predict_response = requests.post(f"{BACKEND_URL}/predict", json=predict_payload)
 
             if predict_response.status_code == 200:
                 result = predict_response.json()
@@ -275,7 +277,8 @@ if upload_file is not None:
                     st.write(f"Confidence: {confidence:.2%}")
 
                     # AI Explanation
-                    client = Groq(api_key=st.secrets["GROQ_API_KEY"], timeout=30.0)
+                    groq_key = os.environ.get("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY", "")
+                    client = Groq(api_key=groq_key, timeout=30.0)
                     available_models = client.models.list()
                     model_names = [m.id for m in available_models.data]
                     preferred_models = ["openai/gpt-oss-20b", "llama-3.1-8b-instant", "openai/gpt-oss-120b"]
