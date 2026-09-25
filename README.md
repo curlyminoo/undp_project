@@ -25,3 +25,28 @@ A web application that helps analyze development project data, identify patterns
 - **Deployment:** Render
 
 ## Architecture
+Frontend (Streamlit) → REST API → Backend (FastAPI) → ML Model / Data Processing
+
+## Running Locally
+
+**Backend:**
+
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+
+**Frontend:**
+
+cd frontend
+pip install -r requirements.txt
+streamlit run app.py
+
+
+You'll need a Groq API key in `frontend/.streamlit/secrets.toml`:
+
+GROQ_API_KEY = "your-key-here"
+
+
+## Author
+Fatemeh (minoo) Ashrafi
