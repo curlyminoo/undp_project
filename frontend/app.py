@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import openpyxl
 import plotly.express as px
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -18,7 +17,6 @@ def safe_json_df(df):
 
 
 
-# upload file
 # upload file
 st.title("AI Data Analyst")
 
@@ -172,92 +170,250 @@ if upload_file is not None:
     # charts
     st.subheader("Data Analysis and Charts")
 
-    categorical_columns = df.select_dtypes(include="object").columns.to_list()
-    numeric_columns = df.select_dtypes(include="number").columns.to_list()
+    categorical_columns = df.select_dtypes(include="object").columns.tolist()
+    numeric_columns = df.select_dtypes(include="number").columns.tolist()
 
-    # نمودار اول: Count by category
+
+    # Count by Category chart
     if categorical_columns:
-        count_col = st.selectbox("select a category column to count: ", categorical_columns, key="count_col")
 
-        payload = {"data": safe_json_df(df), "count_column": count_col}
-        response = requests.post(f"{BACKEND_URL}/analyze", json=payload)
+        st.markdown("### 1. Category Distribution")
 
-        if response.status_code == 200:
-            analysis = response.json()
-            if analysis["counts_by_category"]:
-                cat_data = analysis["counts_by_category"]
-                counts_df = pd.DataFrame(cat_data["data"])
-                fig1 = px.bar(counts_df, x=cat_data["column"], y='Count',
-                        title=f"Count by {cat_data['column']}")
-                st.plotly_chart(fig1)
-        else:
-            st.error("Analysis failed.")
+        count_col = st.selectbox(
+            "Select a categorical column:",
+            categorical_columns,
+            key="count_col"
+        )
 
-    # نمودار دوم: Average by group
+        counts = df[count_col].value_counts().reset_index()
+        counts.columns = [count_col, "Count"]
+
+        fig1 = px.bar(
+            counts,
+            x=count_col,
+            y="Count",
+            title=f"Count by {count_col}"
+        )
+
+        st.plotly_chart(fig1, use_container_width=True)
+
+    else:
+
+        st.info("No categorical columns found in this dataset.")
+
+
+    # Average Numeric Value by Category chart
     if categorical_columns and numeric_columns:
-        group_col = st.selectbox("Group by: ", categorical_columns, key="group_col")
-        value_col = st.selectbox("Average of: ", numeric_columns, key="value_col")
 
-        payload2 = {"data": safe_json_df(df), "group_column": group_col, "value_column": value_col}
-        response2 = requests.post(f"{BACKEND_URL}/analyze", json=payload2)
+        st.markdown("### 2. Average Numeric Value by Category")
 
-        if response2.status_code == 200:
-            analysis2 = response2.json()
-            if analysis2["averages_by_group"]:
-                avg_data = analysis2["averages_by_group"]
-                avg_df = pd.DataFrame(avg_data["data"])
-                fig2 = px.bar(avg_df, x=avg_data["group_column"], y=avg_data["value_column"],
-                        title=f"Average {avg_data['value_column']} by {avg_data['group_column']}")
-                st.plotly_chart(fig2)
+        col1, col2 = st.columns(2)
+
+        with col1:
+            group_col = st.selectbox(
+                "Group by:",
+                categorical_columns,
+                key="group_col"
+            )
+
+        with col2:
+            value_col = st.selectbox(
+                "Calculate average of:",
+                numeric_columns,
+                key="value_col"
+            )
+
+        avg_df = (
+            df.groupby(group_col)[value_col]
+            .mean()
+            .reset_index()
+        )
+
+        fig2 = px.bar(
+            avg_df,
+            x=group_col,
+            y=value_col,
+            title=f"Average {value_col} by {group_col}"
+        )
+
+        st.plotly_chart(fig2, use_container_width=True)
+
+    elif numeric_columns:
+
+        st.info(
+            "Numeric columns are available, but no categorical column "
+            "was found for group comparison."
+        )
+
+
+    #Scatter Plot
+    if len(numeric_columns) >= 2:
+
+        st.markdown("### 3. Relationship Between Numeric Variables")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            x_col = st.selectbox(
+                "X-axis:",
+                numeric_columns,
+                key="x_scatter"
+            )
+
+        with col2:
+            y_col = st.selectbox(
+                "Y-axis:",
+                numeric_columns,
+                index=1 if len(numeric_columns) > 1 else 0,
+                key="y_scatter"
+            )
+
+        if categorical_columns:
+
+            color_col = st.selectbox(
+                "Color by (optional):",
+                ["None"] + categorical_columns,
+                key="color_scatter"
+            )
+
+            if color_col == "None":
+
+                fig3 = px.scatter(
+                    df,
+                    x=x_col,
+                    y=y_col,
+                    title=f"{y_col} vs {x_col}"
+                )
+
+            else:
+
+                fig3 = px.scatter(
+                    df,
+                    x=x_col,
+                    y=y_col,
+                    color=color_col,
+                    title=f"{y_col} vs {x_col} by {color_col}"
+                )
+
         else:
-            st.error("Analysis failed.")
 
-    # نمودار سوم: Scatter
-    if len(numeric_columns) >= 2 and categorical_columns:
-        st.write("Relationship between two numeric variables")
+            fig3 = px.scatter(
+                df,
+                x=x_col,
+                y=y_col,
+                title=f"{y_col} vs {x_col}"
+            )
 
-        x_col = st.selectbox("X-axis:", numeric_columns, key="x_scatter")
-        y_col = st.selectbox("Y-axis:", numeric_columns, key="y_scatter")
-        color_col = st.selectbox("Color by:", categorical_columns, key="color_scatter")
+        st.plotly_chart(fig3, use_container_width=True)
 
-        scatter_payload = {
-            "data": safe_json_df(df),
-            "x_column": x_col,
-            "y_column": y_col,
-            "color_column": color_col
-        }
-        scatter_response = requests.post(f"{BACKEND_URL}/scatter", json=scatter_payload)
+    else:
 
-        if scatter_response.status_code == 200:
-            scatter_data = scatter_response.json()
-            scatter_df = pd.DataFrame(scatter_data["data"])
-            fig3 = px.scatter(scatter_df, x=x_col, y=y_col, color=color_col,
-                    title=f"{y_col} vs {x_col} by {color_col}")
-            st.plotly_chart(fig3)
-        else:
-            st.error("Scatter analysis failed.")
+        st.info(
+            "At least two numeric columns are required to create a scatter plot."
+        )
+
+
+    #Overall Numeric Statistics
+    if numeric_columns:
+
+        st.markdown("### 4. Overall Numeric Statistics")
+
+        statistics_df = df[numeric_columns].describe().T
+
+        statistics_df = statistics_df[
+            ["count", "mean", "std", "min", "max"]
+        ]
+
+        statistics_df = statistics_df.round(2)
+
+        st.dataframe(
+            statistics_df,
+            use_container_width=True
+        )
+
+    else:
+
+        st.info("No numeric columns found for statistical analysis.")
 
 
     # key insight
+    st.subheader("Key Insights")
+
+    if numeric_columns:
+
+        # Select numeric column
+        insight_numeric_col = st.selectbox(
+            "Select a numeric column:",
+            numeric_columns,
+            key="insight_numeric"
+        )
+
+    # Overall statistics
+    mean_value = df[insight_numeric_col].mean()
+    median_value = df[insight_numeric_col].median()
+    min_value = df[insight_numeric_col].min()
+    max_value = df[insight_numeric_col].max()
+
+    st.write(
+        f"• Average {insight_numeric_col}: "
+        f"{mean_value:.2f}"
+    )
+
+    st.write(
+        f"• Median {insight_numeric_col}: "
+        f"{median_value:.2f}"
+    )
+
+    st.write(
+        f"• Minimum {insight_numeric_col}: "
+        f"{min_value:.2f}"
+    )
+
+    st.write(
+        f"• Maximum {insight_numeric_col}: "
+        f"{max_value:.2f}"
+    )
+
+
+    # Grouped insight
     if categorical_columns and numeric_columns:
-        st.subheader("Key Insights")
 
-        unique_value = df[categorical_columns[0]].unique()
-        preview_count = 10
+        st.markdown("### Comparison by Category")
 
-        show_all = st.checkbox(f"Show all {len(unique_value)} categories") if len(unique_value) > preview_count else True
-        values_to_show = unique_value if show_all else unique_value[:preview_count]
+        insight_group_col = st.selectbox(
+            "Group by:",
+            categorical_columns,
+            key="insight_group"
+        )
 
-        for status_val in values_to_show:
-            avg_val = df[df[categorical_columns[0]] == status_val][numeric_columns[0]].mean()
-            st.write(f"- Average {numeric_columns[0]} for '{status_val}': {avg_val:.2f}")
+        insight_value_col = st.selectbox(
+            "Analyze:",
+            numeric_columns,
+            key="insight_value"
+        )
 
-    elif numeric_columns:
-        st.info("No categorical column found to group by. Showing overall stats instead:")
-        for col in numeric_columns:
-            st.write(f"- Average {col}: {df[col].mean():.2f}")
+        grouped = (
+            df.groupby(insight_group_col)[insight_value_col]
+            .agg(["mean", "min", "max"])
+            .reset_index()
+        )
+
+        grouped["mean"] = grouped["mean"].round(2)
+        grouped["min"] = grouped["min"].round(2)
+        grouped["max"] = grouped["max"].round(2)
+
+        st.dataframe(
+            grouped,
+            use_container_width=True
+        )
+
     else:
-        st.info("Not enough data to generate insights.")
+
+        if not numeric_columns:
+            st.info(
+                "No numeric columns are available "
+                "for generating insights."
+            )
 
 
     # ML model
