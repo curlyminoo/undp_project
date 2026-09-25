@@ -19,35 +19,65 @@ def safe_json_df(df):
 
 
 # upload file
-st.title("Developement UNDP Project")
+# upload file
+st.title("AI Data Analyst")
 
-upload_file = st.file_uploader("Uploade your file" ,type= ["csv", "xlsx", "json"])
+upload_file = st.file_uploader(
+    "Upload your dataset",
+    type=["csv", "xlsx", "json"]
+)
 
 if upload_file is not None:
-    if 'df' not in st.session_state:
 
-        files = {"file" : (upload_file.name, upload_file.getvalue())}
-        response = requests.post(f"{BACKEND_URL}/upload", files=files)
+    # Check whether the user selected a new file
+    if st.session_state.get("uploaded_file_name") != upload_file.name:
+
+        files = {
+            "file": (
+                upload_file.name,
+                upload_file.getvalue()
+            )
+        }
+
+        with st.spinner("Uploading dataset..."):
+            response = requests.post(
+                f"{BACKEND_URL}/upload",
+                files=files
+            )
 
         if response.status_code == 200:
+
             data = response.json()
 
             if "error" in data:
                 st.error(data["error"])
                 st.stop()
 
-            else:
-                st.session_state['df'] = pd.DataFrame(data["data"])
-                st.session_state['total_rows'] = data["rows"]
-                st.session_state['total_columns'] = data["columns"]
+            # Save new dataset
+            st.session_state["df"] = pd.DataFrame(data["data"])
+            st.session_state["total_rows"] = data["rows"]
+            st.session_state["total_columns"] = data["columns"]
+
+            # Remember uploaded file
+            st.session_state["uploaded_file_name"] = upload_file.name
+
+            # Reset ML state when a new file is uploaded
+            st.session_state["model_trained"] = False
+            st.session_state.pop("feature_cols", None)
+
+            st.success("Dataset uploaded successfully.")
 
         else:
-            st.error("Failed to connect to the backend server.")
+            st.error(
+                f"Failed to upload dataset. "
+                f"Backend status: {response.status_code}"
+            )
             st.stop()
 
-    df = st.session_state['df']
+    # Get current dataframe
+    df = st.session_state["df"]
 
-    st.success("upload successfully")
+    st.success("Dataset is ready for analysis.")
     st.write("data frame: ")
     st.dataframe(df)
 
@@ -108,8 +138,14 @@ if upload_file is not None:
         selected_col = st.multiselect("Select the columns to convert to numeric: ", object_columns)
 
         if st.button("Reset to original file"):
-            del st.session_state['df']
+
+            st.session_state.pop("df", None)
+            st.session_state.pop("uploaded_file_name", None)
+            st.session_state.pop("model_trained", None)
+            st.session_state.pop("feature_cols", None)
+
             st.rerun()
+
         if st.button("Convert selected columns"):
             payload = {
                 "data": safe_json_df(df),
