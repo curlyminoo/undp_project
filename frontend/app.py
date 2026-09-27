@@ -15,6 +15,18 @@ def safe_json_df(df):
 
 st.title("🤖 AI Data Analyst")
 
+st.markdown("""
+Welcome! This tool helps you analyze development project data in a few simple steps:
+
+1. 📤 **Upload** your dataset (CSV, Excel, or JSON)
+2. 🧹 **Clean** and prepare your data
+3. 📈 **Visualize** patterns and trends
+4. 🤖 **Predict** outcomes with machine learning
+5. 🧠 **Understand** results with AI-generated explanations
+
+Get started by uploading a file below.
+""")
+
 upload_file = st.file_uploader(
     "📤 Upload your dataset",
     type=["csv", "xlsx", "json"]
