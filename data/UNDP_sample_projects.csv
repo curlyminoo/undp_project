@@ -1,0 +1,504 @@
+Project_ID,Country,Sector,Budget,Start_Date,End_Date,Duration,Status,Completion_Rate
+P0001,Ghana,Health,39382.0,2025-01-31,2025-05-16,105,Ongoing,38.0
+P0002,Uganda,Infrastructure,109291.0,2025-12-30,2027-02-28,425,Delayed,33.0
+P0003,Uganda,Health,388339.0,2024-05-10,2025-04-22,347,Delayed,76.0
+P0004,Kenya,Gender Equality,159828.0,2025-07-18,2027-02-24,586,Ongoing,66.0
+P0005,India,Education,307753.0,2025-02-04,2025-10-11,249,Delayed,53.0
+P0006,,Infrastructure,172550.0,2024-12-31,2026-07-18,564,Completed,100.0
+P0007,Ghana,Gender Equality,257050.0,2024-11-10,2026-02-22,469,Completed,95.0
+P0008,Iran,Health,457882.0,2022-05-02,2024-01-26,634,Completed,100.0
+P0009,Ghana,Agriculture,362827.0,2023-04-12,2024-09-09,516,Completed,96.0
+P0010,Kenya,Agriculture,411858.0,2025-05-23,2026-05-15,357,Ongoing,93.0
+P0011,Uganda,Education,155330.0,2022-11-27,2024-09-23,666,Cancelled,14.0
+P0012,Ethiopia,Infrastructure,96315.0,2022-03-29,2023-08-17,506,Completed,98.0
+P0013,Iran,Infrastructure,,2025-10-28,2026-07-12,257,Completed,99.0
+P0014,Bangladesh,Infrastructure,413349.0,2025-01-28,2025-06-09,132,Ongoing,12.0
+P0015,Jordan,Gender Equality,39153.0,2024-05-21,2026-02-25,645,Cancelled,54.0
+P0016,Ethiopia,Education,101325.0,2022-05-11,2023-05-20,374,Completed,94.0
+P0017,Jordan,Infrastructure,265773.0,2025-08-25,2026-12-24,486,Ongoing,39.0
+P0018,Tanzania,Gender Equality,431215.0,2024-02-09,2024-05-20,101,Completed,98.0
+P0019,India,,80318.0,2022-12-10,2024-11-05,696,Completed,93.0
+P0020,Iran,Health,419030.0,2025-12-08,2027-01-03,391,Cancelled,71.0
+P0021,Nepal,Gender Equality,402177.0,2024-03-16,2025-02-21,342,Cancelled,46.0
+P0022,Iran,Agriculture,101077.0,2023-01-21,2024-08-31,588,Completed,99.0
+P0023,Ghana,Agriculture,377618.0,2025-04-30,2025-09-01,124,Cancelled,57.0
+P0024,Uganda,Health,158515.0,2024-08-13,2025-02-08,179,Ongoing,74.0
+P0025,Ghana,Agriculture,494209.0,2022-10-04,2024-08-28,694,Delayed,72.0
+P0026,Ghana,Education,231988.0,2025-03-30,2027-02-19,691,Ongoing,88.0
+P0027,Tanzania,Health,360463.0,2023-04-05,2024-08-24,507,Ongoing,82.0
+P0028,Ethiopia,Agriculture,150885.0,2025-08-30,2026-03-22,204,Ongoing,24.0
+P0029,Nepal,Environment,396921.0,2022-01-22,2022-11-03,285,Ongoing,58.0
+P0030,Nepal,Gender Equality,42368.0,2022-09-10,2024-04-22,590,Completed,91.0
+P0031,Ghana,Agriculture,171400.0,2024-01-18,2025-08-22,582,,92.0
+P0032,Jordan,Education,213014.0,2024-05-06,2024-10-17,164,Completed,100.0
+P0033,Tanzania,Infrastructure,116751.0,2023-04-20,2024-09-03,502,Delayed,76.0
+P0034,Ghana,Agriculture,255203.0,2024-12-18,2026-03-28,465,Completed,90.0
+P0035,India,Infrastructure,314450.0,2023-05-26,2024-10-16,509,Ongoing,70.0
+P0036,Uganda,Environment,195987.0,2023-12-01,2024-12-01,366,Cancelled,52.0
+P0037,Ethiopia,Agriculture,324363.0,2024-09-02,2025-12-29,483,Completed,95.0
+P0038,Bangladesh,Health,236951.0,2022-07-09,2024-01-06,546,Ongoing,48.0
+P0039,India,Infrastructure,220716.0,2024-08-15,2025-05-23,281,Ongoing,65.0
+P0040,Jordan,Environment,85279.0,2023-11-18,2024-05-24,188,Delayed,39.0
+P0041,Iran,Health,340172.0,2024-08-15,2026-05-14,637,Completed,95.0
+P0042,Iran,Health,391407.0,2023-07-17,2024-01-18,185,Ongoing,97.0
+P0043,,Health,25126.0,2025-06-21,2026-03-27,279,Delayed,30.0
+P0044,Ghana,Health,339473.0,2024-04-11,2024-08-15,126,Cancelled,71.0
+P0045,Bangladesh,Agriculture,52632.0,2025-02-28,2026-06-01,458,Ongoing,86.0
+P0046,Kenya,Gender Equality,221382.0,2023-10-09,2025-06-14,614,Ongoing,34.0
+P0047,Kenya,Agriculture,134945.0,2022-01-21,2023-01-24,368,Ongoing,80.0
+P0048,Jordan,Agriculture,342320.0,2024-04-20,2025-02-20,306,Delayed,35.0
+P0049,Ghana,Environment,275869.0,2022-06-16,2023-06-13,362,Ongoing,13.0
+P0050,Nepal,Environment,242138.0,2025-07-21,2025-12-19,151,Completed,90.0
+P0051,Nepal,Gender Equality,200399.0,2023-01-23,2024-12-08,685,Cancelled,81.0
+P0052,Ethiopia,Environment,487120.0,2023-08-24,2024-10-28,431,Ongoing,29.0
+P0053,Bangladesh,Education,159869.0,2022-11-12,2024-03-12,486,Ongoing,72.0
+P0054,Bangladesh,Gender Equality,203954.0,2022-01-14,2022-05-02,108,Completed,100.0
+P0055,Iran,Environment,169790.0,2022-08-30,2023-05-23,266,Ongoing,83.0
+P0056,Tanzania,Gender Equality,59560.0,2024-02-16,2025-06-15,485,Ongoing,66.0
+P0057,Jordan,Agriculture,363733.0,2025-10-01,2027-03-19,534,Ongoing,99.0
+P0058,Kenya,Agriculture,309260.0,2023-07-19,2024-06-05,322,Completed,92.0
+P0059,Jordan,Gender Equality,454460.0,2024-06-16,2024-11-28,165,Ongoing,12.0
+P0060,Nepal,Education,157717.0,2025-09-25,2026-09-14,354,Cancelled,15.0
+P0061,Nepal,Education,"$203,595",2022-04-02,2023-09-28,544,Completed,94.0
+P0062,India,Gender Equality,"$149,085",2025-10-22,2027-02-07,473,Cancelled,14.0
+P0063,Ethiopia,Environment,"$404,862",2024-08-13,2026-05-28,653,Ongoing,63.0
+P0064,Bangladesh,Infrastructure,"$306,400",2025-12-22,2027-08-09,595,Delayed,70.0
+P0065,Uganda,Education,125158.0,2023-05-24,2024-08-22,456,Delayed,50.0
+P0066,Jordan,Health,209245.0,2024-02-15,2024-10-05,233,Ongoing,58.0
+P0067,Nepal,Agriculture,193502.0,2022-02-04,2022-07-12,158,Delayed,74.0
+P0068,Tanzania,Gender Equality,457498.0,2022-07-25,2023-01-29,188,Delayed,25.0
+P0069,Iran,Health,406863.0,2025-01-09,2026-05-09,485,Ongoing,70.0
+P0070,Kenya,Gender Equality,481590.0,2025-11-12,2026-03-06,114,Completed,92.0
+P0071,Ethiopia,Agriculture,355388.0,2024-10-22,2026-05-03,558,Ongoing,59.0
+P0072,Tanzania,Agriculture,167766.0,2024-10-18,2026-05-14,573,Delayed,75.0
+P0073,Ethiopia,Education,343408.0,2025-11-14,2027-08-30,654,Delayed,38.0
+P0074,India,Education,493276.0,2023-07-20,2024-03-16,240,Delayed,56.0
+P0075,Uganda,Health,82545.0,2025-02-03,2025-09-24,233,Ongoing,97.0
+P0076,Nepal,Gender Equality,326368.0,2023-12-04,2025-09-22,658,Delayed,77.0
+P0077,Iran,Agriculture,385089.0,2023-02-06,2023-06-14,128,Completed,99.0
+P0078,Tanzania,,38224.0,2023-12-31,2024-07-16,198,Ongoing,22.0
+P0079,Ethiopia,Infrastructure,65738.0,2022-06-11,2022-10-20,131,Completed,92.0
+P0080,Bangladesh,Health,443366.0,2022-07-21,2023-04-22,275,Completed,99.0
+P0081,India,Environment,350875.0,2024-09-22,2026-01-22,487,Ongoing,77.0
+P0082,Bangladesh,Health,205760.0,2022-09-27,2023-08-05,312,Ongoing,23.0
+P0083,Iran,Environment,264690.0,2024-03-26,2024-11-03,222,Ongoing,20.0
+P0084,Tanzania,Environment,491725.0,2025-07-18,2026-03-27,252,Ongoing,65.0
+P0085,India,Environment,164649.0,2023-04-01,2024-01-30,304,Ongoing,76.0
+P0086,Tanzania,Infrastructure,33070.0,2025-06-29,2026-05-19,324,Completed,92.0
+P0087,Nepal,Health,151161.0,2024-10-13,2026-08-21,677,Ongoing,18.0
+P0088,Ghana,Health,33666.0,2022-10-23,2023-01-29,98,Completed,94.0
+P0089,India,Infrastructure,344905.0,2023-12-21,2024-06-01,163,Completed,94.0
+P0090,Bangladesh,Agriculture,323512.0,2022-12-04,2024-07-07,581,Ongoing,85.0
+P0091,Iran,Education,162855.0,2024-05-28,2025-05-05,342,Ongoing,51.0
+P0092,Uganda,Health,66914.0,2024-12-12,2025-10-27,319,Ongoing,18.0
+P0093,Nepal,Education,226579.0,2024-03-02,2025-10-31,608,Ongoing,88.0
+P0094,Ghana,Gender Equality,152738.0,2022-08-05,2023-04-25,263,Ongoing,49.0
+P0095,Uganda,Gender Equality,497242.0,2024-02-03,2024-10-17,257,Delayed,23.0
+P0096,Kenya,Infrastructure,271965.0,2022-07-07,2023-03-23,259,Ongoing,14.0
+P0097,Nepal,Gender Equality,354670.0,2023-01-15,2024-05-11,482,Ongoing,20.0
+P0098,Iran,Gender Equality,489051.0,2023-05-08,2024-02-15,283,Completed,93.0
+P0099,Ethiopia,Agriculture,463981.0,2024-11-30,2026-07-29,606,Completed,90.0
+P0100,India,Agriculture,307100.0,2025-03-26,2025-07-22,118,Ongoing,88.0
+P0101,Tanzania,Agriculture,243967.0,2022-01-15,2022-09-26,254,Ongoing,47.0
+P0102,,Gender Equality,333384.0,2022-03-06,2023-07-30,511,Ongoing,81.0
+P0103,India,Infrastructure,408152.0,2023-06-05,2024-08-06,428,Ongoing,14.0
+P0104,Uganda,Environment,455364.0,2025-09-29,2027-05-07,585,Ongoing,57.0
+P0105,Tanzania,Environment,119270.0,2025-02-26,2026-05-26,454,Delayed,66.0
+P0106,Jordan,Education,291901.0,2023-10-10,2024-12-14,431,Delayed,23.0
+P0107,Bangladesh,Environment,44097.0,2024-12-22,2026-08-03,589,Delayed,39.0
+P0108,Kenya,Environment,166467.0,2025-03-08,2026-10-29,600,Cancelled,46.0
+P0109,Nepal,Agriculture,172313.0,2023-08-16,2024-10-05,416,Completed,94.0
+P0110,Iran,Agriculture,391036.0,2023-01-27,2023-11-29,306,Completed,99.0
+P0111,Kenya,Gender Equality,183768.0,2023-02-23,2024-03-19,390,Completed,94.0
+P0112,Ethiopia,Education,271726.0,2022-10-16,2023-05-25,221,Ongoing,37.0
+P0113,India,Health,357624.0,2023-01-14,2023-06-22,159,Delayed,29.0
+P0114,India,Education,71163.0,2022-08-19,2023-07-26,341,Completed,93.0
+P0115,Iran,Education,44816.0,2024-10-14,2026-03-02,504,Cancelled,90.0
+P0116,Ghana,Infrastructure,468056.0,2022-02-10,2023-07-29,534,Completed,95.0
+P0117,Ghana,Gender Equality,258619.0,2024-11-17,2025-08-15,271,Cancelled,54.0
+P0118,Jordan,Infrastructure,339997.0,2022-05-15,2023-01-26,256,Ongoing,71.0
+P0119,Bangladesh,Education,180989.0,2022-07-20,2023-01-16,180,Completed,99.0
+P0120,Tanzania,Education,121731.0,2024-02-19,2025-10-31,620,Ongoing,76.0
+P0121,Ethiopia,Education,177638.0,2024-07-18,2024-11-23,128,Completed,93.0
+P0122,Kenya,Environment,231524.0,2024-11-22,2025-06-25,215,Completed,96.0
+P0123,Ghana,Infrastructure,87823.0,2024-12-07,2026-05-31,540,Completed,96.0
+P0124,Jordan,Education,176878.0,2023-05-18,2024-02-04,262,Delayed,43.0
+P0125,Jordan,Agriculture,231592.0,2023-02-11,2023-12-17,309,Ongoing,86.0
+P0126,Iran,Gender Equality,26759.0,2024-03-15,2024-08-09,147,Completed,91.0
+P0127,Ethiopia,Gender Equality,282164.0,2022-04-09,2023-10-26,565,Ongoing,15.0
+P0128,Uganda,Agriculture,460165.0,2023-11-15,2025-05-13,545,Delayed,73.0
+P0129,Tanzania,Gender Equality,379518.0,2023-12-27,2025-03-21,450,Completed,92.0
+P0130,Bangladesh,Environment,158554.0,2024-08-18,2024-11-16,90,Ongoing,89.0
+P0131,Nepal,Environment,311586.0,2023-09-05,2024-12-24,476,Completed,90.0
+P0132,Iran,Health,451935.0,2023-10-05,2024-12-15,437,Completed,97.0
+P0133,Tanzania,Health,476282.0,2024-10-25,2025-07-31,279,Ongoing,68.0
+P0134,Nepal,Health,118501.0,2025-05-26,2027-01-10,594,Completed,98.0
+P0135,Nepal,Gender Equality,289223.0,2023-05-18,2024-02-22,280,Ongoing,50.0
+P0136,Ethiopia,Environment,420933.0,2024-02-06,2025-09-25,597,Delayed,54.0
+P0137,Ethiopia,Environment,84676.0,2023-02-02,2024-05-05,458,Completed,93.0
+P0138,Kenya,Environment,446168.0,2024-05-20,2025-09-30,498,Ongoing,98.0
+P0139,Jordan,Agriculture,242516.0,2024-03-05,2024-09-27,206,Completed,95.0
+P0140,Tanzania,Environment,198532.0,2023-01-28,2023-09-08,223,Cancelled,51.0
+P0141,Iran,Agriculture,115397.0,2022-07-26,2022-12-20,147,Ongoing,72.0
+P0142,India,Health,97847.0,2024-11-04,2026-08-11,645,Delayed,45.0
+P0143,Iran,Health,118607.0,2024-06-10,2025-02-27,262,Ongoing,47.0
+P0144,Kenya,Gender Equality,245178.0,2024-05-13,2025-01-06,238,Completed,98.0
+P0145,Bangladesh,Health,174521.0,2024-01-13,2024-06-30,169,Ongoing,16.0
+P0146,Jordan,Gender Equality,,2025-06-18,2026-04-16,302,Cancelled,14.0
+P0147,India,Education,89077.0,2023-07-18,2024-05-05,292,Ongoing,54.0
+P0148,Ghana,Education,325402.0,2024-10-17,2025-08-31,318,Delayed,56.0
+P0149,Bangladesh,Infrastructure,204374.0,2022-04-06,2023-02-16,316,Delayed,57.0
+P0150,Ethiopia,Gender Equality,282009.0,2023-04-30,2025-01-10,621,Completed,95.0
+P0151,Nepal,Infrastructure,447081.0,2025-12-01,2027-05-15,530,Completed,98.0
+P0152,Ghana,Infrastructure,162717.0,2022-08-19,2023-12-23,491,Ongoing,19.0
+P0153,Iran,Education,406915.0,2024-01-19,2024-06-03,136,Ongoing,41.0
+P0154,Iran,Gender Equality,63000.0,2025-04-09,2026-02-25,322,Delayed,40.0
+P0155,Ethiopia,Education,51737.0,2023-06-25,2024-07-23,394,Delayed,73.0
+P0156,Kenya,Infrastructure,298629.0,2024-11-25,2026-08-02,615,Ongoing,48.0
+P0157,Tanzania,Gender Equality,325709.0,2023-06-09,2024-01-27,232,Completed,93.0
+P0158,Ghana,Infrastructure,443738.0,2025-03-29,2026-08-15,504,Delayed,59.0
+P0159,Ghana,Environment,406758.0,2025-06-20,2027-02-12,602,Completed,97.0
+P0160,Uganda,Gender Equality,352299.0,2025-01-14,2026-04-21,462,Delayed,58.0
+P0161,Bangladesh,Gender Equality,211240.0,2023-08-01,2025-05-17,655,Ongoing,86.0
+P0162,Jordan,Infrastructure,77487.0,2023-11-13,2024-10-26,348,Ongoing,21.0
+P0163,Bangladesh,Environment,417092.0,2023-07-11,2025-01-21,560,Completed,98.0
+P0164,Tanzania,Agriculture,299486.0,2024-10-09,2025-01-18,101,Ongoing,75.0
+P0165,Iran,Education,327950.0,2023-10-08,2024-11-30,419,Ongoing,22.0
+P0166,Iran,Infrastructure,335914.0,2024-03-06,2025-05-27,447,Ongoing,55.0
+P0167,Iran,Gender Equality,103623.0,2024-11-17,2026-03-29,497,Completed,93.0
+P0168,Uganda,Education,390321.0,2025-09-25,2026-12-31,462,Delayed,40.0
+P0169,Iran,Education,418170.0,2025-09-16,2025-12-22,97,Delayed,29.0
+P0170,Tanzania,Education,362773.0,2025-10-03,2026-05-02,211,Completed,94.0
+P0171,Ethiopia,Agriculture,408137.0,2025-06-08,2026-08-19,437,Completed,97.0
+P0172,Jordan,Health,208675.0,2022-07-09,2023-01-04,179,Completed,99.0
+P0173,Tanzania,Infrastructure,414088.0,2025-06-02,2026-07-12,405,Ongoing,79.0
+P0174,Jordan,Health,238046.0,2025-11-09,2026-08-03,267,Ongoing,92.0
+P0175,Tanzania,Health,130947.0,2025-11-01,2027-07-23,629,Ongoing,39.0
+P0176,Iran,Health,313543.0,2025-07-30,2025-12-07,130,Completed,95.0
+P0177,Ethiopia,Education,153177.0,2023-09-25,2025-05-08,591,Ongoing,83.0
+P0178,Ghana,Environment,241454.0,2023-09-20,2024-05-11,234,Ongoing,72.0
+P0179,Bangladesh,Education,499460.0,2024-08-30,2025-06-16,290,Ongoing,37.0
+P0180,Nepal,Education,134575.0,2025-07-06,2027-01-07,550,Cancelled,69.0
+P0181,Ethiopia,Gender Equality,398048.0,2025-10-14,2027-07-23,647,Completed,96.0
+P0182,Ghana,Gender Equality,232606.0,2023-12-11,2025-09-07,636,Ongoing,46.0
+P0183,Kenya,Health,473322.0,2025-12-05,2026-11-12,342,Ongoing,31.0
+P0184,Tanzania,Education,317822.0,2023-10-11,2025-02-01,479,Ongoing,77.0
+P0185,Kenya,Health,101218.0,2022-11-14,2024-09-27,683,Delayed,57.0
+P0186,Ghana,Gender Equality,88230.0,2025-06-02,2026-05-13,345,Ongoing,77.0
+P0187,Ethiopia,Environment,270756.0,2025-06-11,2026-12-02,539,Cancelled,100.0
+P0188,Tanzania,Infrastructure,361199.0,2023-11-15,2024-02-22,99,Completed,92.0
+P0189,Nepal,,474589.0,2023-10-26,2024-09-21,331,Completed,96.0
+P0190,Iran,Environment,187552.0,2025-10-29,2026-10-04,340,Delayed,65.0
+P0191,Tanzania,Infrastructure,487052.0,2025-06-10,2025-09-12,94,Ongoing,31.0
+P0192,Tanzania,Agriculture,359402.0,2025-02-10,2025-09-06,208,Completed,97.0
+P0193,Ethiopia,Health,64986.0,2023-03-18,2024-06-23,463,Completed,99.0
+P0194,Ethiopia,Health,180232.0,2023-07-18,2023-12-19,154,Completed,95.0
+P0195,Ghana,Agriculture,372739.0,2025-07-15,2026-03-07,235,Delayed,23.0
+P0196,India,Agriculture,126358.0,2025-11-10,2026-09-19,313,Completed,99.0
+P0197,Tanzania,Health,497327.0,2025-11-11,2026-10-05,328,Completed,98.0
+P0198,Bangladesh,Agriculture,352073.0,2025-02-10,2025-11-03,266,Completed,95.0
+P0199,Tanzania,Education,98506.0,2024-08-09,2025-08-15,371,Ongoing,23.0
+P0200,Ghana,Infrastructure,59911.0,2025-01-09,2025-06-10,152,,98.0
+P0201,Jordan,Infrastructure,374271.0,2023-11-30,2024-10-01,306,Ongoing,56.0
+P0202,Kenya,Infrastructure,450037.0,2022-04-23,2023-10-25,550,Completed,93.0
+P0203,Iran,Education,231111.0,2022-01-02,2023-12-02,699,Delayed,79.0
+P0204,India,Agriculture,478751.0,2023-10-04,2024-04-15,194,Completed,97.0
+P0205,Nepal,Environment,400597.0,2022-08-08,2023-02-12,188,Ongoing,61.0
+P0206,Nepal,Agriculture,109458.0,2024-05-04,2025-12-25,600,Delayed,76.0
+P0207,Nepal,Health,37175.0,2025-06-02,2026-09-19,474,Ongoing,16.0
+P0208,Ethiopia,Gender Equality,406379.0,2023-01-20,2024-05-28,494,Ongoing,38.0
+P0209,Nepal,Infrastructure,341915.0,2025-11-27,2027-07-27,607,Completed,100.0
+P0210,Iran,Agriculture,414301.0,2025-02-27,2026-09-15,565,Completed,93.0
+P0211,Kenya,Environment,146300.0,2024-12-12,2026-05-22,526,Ongoing,15.0
+P0212,Nepal,Health,111925.0,2023-12-31,2024-04-21,112,Cancelled,88.0
+P0213,Tanzania,Education,269446.0,2025-12-10,2027-09-25,654,Ongoing,41.0
+P0214,Tanzania,Education,91358.0,2022-09-04,2024-03-04,547,Ongoing,60.0
+P0215,Ethiopia,Environment,435543.0,2024-04-15,2024-10-04,172,Delayed,64.0
+P0216,Iran,Health,72057.0,2022-07-22,2023-03-13,234,Ongoing,67.0
+P0217,Kenya,Infrastructure,293294.0,2025-04-22,2025-10-13,174,Completed,91.0
+P0218,India,Agriculture,291569.0,2022-05-03,2022-10-17,167,Ongoing,35.0
+P0219,Ghana,Health,279726.0,2023-02-05,2024-08-04,546,Cancelled,55.0
+P0220,Kenya,Education,303176.0,2024-02-06,2024-05-06,90,Completed,99.0
+P0221,Ghana,Environment,27198.0,2022-10-21,2023-03-10,140,Ongoing,13.0
+P0222,Jordan,Environment,478716.0,2022-10-07,2024-03-25,535,Completed,100.0
+P0223,Ghana,Agriculture,209466.0,2024-06-02,2025-11-22,538,Ongoing,22.0
+P0224,Bangladesh,Environment,438295.0,2022-07-17,2024-02-14,577,Completed,98.0
+P0225,Tanzania,Environment,192292.0,2024-09-08,2025-01-09,123,Ongoing,24.0
+P0226,Iran,Health,460090.0,2024-01-22,2025-04-03,437,Delayed,39.0
+P0227,Uganda,Infrastructure,169931.0,2022-05-24,2022-11-24,184,Completed,94.0
+P0228,Ethiopia,Agriculture,468676.0,2023-09-01,2024-02-09,161,Ongoing,84.0
+P0229,Bangladesh,Health,187491.0,2025-05-09,2027-02-08,640,Delayed,36.0
+P0230,Ghana,Infrastructure,406009.0,2025-02-21,2025-10-22,243,Cancelled,11.0
+P0231,Nepal,Health,426921.0,2022-07-06,2023-06-10,339,Completed,93.0
+P0232,Iran,Gender Equality,461096.0,2025-09-11,2027-02-20,527,Ongoing,87.0
+P0233,Bangladesh,Health,285910.0,2023-04-09,2023-11-02,207,Completed,91.0
+P0234,Ethiopia,Environment,48236.0,2025-10-04,2026-11-03,395,Cancelled,31.0
+P0235,Tanzania,Infrastructure,112955.0,2023-10-22,2024-10-13,357,Cancelled,84.0
+P0236,Iran,Agriculture,241586.0,2024-02-03,2024-06-25,143,Ongoing,36.0
+P0237,Ethiopia,Agriculture,128145.0,2024-08-12,2025-07-03,325,Delayed,74.0
+P0238,Jordan,Infrastructure,171430.0,2023-02-07,2024-05-30,478,Ongoing,90.0
+P0239,Jordan,Environment,255785.0,2025-10-01,2027-02-03,490,Ongoing,65.0
+P0240,Ethiopia,Education,119914.0,2022-05-27,2023-06-23,392,Completed,90.0
+P0241,Bangladesh,Health,390014.0,2025-03-17,2026-01-07,296,Delayed,26.0
+P0242,Iran,Environment,232990.0,2024-05-13,2025-03-27,318,Completed,100.0
+P0243,Bangladesh,Gender Equality,403387.0,2023-05-04,2025-03-01,667,Delayed,23.0
+P0244,India,Infrastructure,39596.0,2024-07-17,2024-12-28,164,Delayed,48.0
+P0245,Ghana,Health,451788.0,2023-07-05,2024-12-10,524,Delayed,33.0
+P0246,India,Agriculture,496973.0,2022-12-04,2023-06-14,192,Completed,96.0
+P0247,Jordan,Education,157351.0,2024-05-21,2025-10-14,511,Completed,95.0
+P0248,Tanzania,Gender Equality,219269.0,2023-10-03,2024-11-01,395,Completed,91.0
+P0249,Kenya,Agriculture,398640.0,2023-04-18,2023-10-22,187,Ongoing,12.0
+P0250,Ghana,Infrastructure,417417.0,2022-05-31,2023-07-29,424,Completed,97.0
+P0251,,Health,480732.0,2025-12-09,2027-05-17,524,Cancelled,67.0
+P0252,Bangladesh,Infrastructure,163155.0,2025-08-14,2027-02-01,536,Ongoing,47.0
+P0253,Bangladesh,Health,145674.0,2022-09-20,2023-10-22,397,Completed,100.0
+P0254,Bangladesh,Environment,407451.0,2022-05-24,2023-04-27,338,Ongoing,43.0
+P0255,Tanzania,Education,282529.0,2022-12-12,2023-08-24,255,Ongoing,70.0
+P0256,India,Environment,265469.0,2023-09-16,2025-04-08,570,Ongoing,44.0
+P0257,Kenya,Environment,435987.0,2024-10-13,2025-12-11,424,Ongoing,73.0
+P0258,Bangladesh,Infrastructure,448191.0,2024-05-30,2026-02-20,631,Delayed,22.0
+P0259,Uganda,Education,463864.0,2022-01-02,2022-07-16,195,Ongoing,33.0
+P0260,Ghana,Health,281713.0,2024-06-15,2026-03-29,652,Cancelled,21.0
+P0261,Iran,Health,466501.0,2025-08-20,2026-02-06,170,Delayed,43.0
+P0262,Uganda,Gender Equality,44063.0,2022-09-11,2023-04-21,222,Completed,93.0
+P0263,Kenya,Agriculture,92642.0,2023-03-29,2023-11-11,227,Cancelled,89.0
+P0264,Tanzania,Gender Equality,115093.0,2024-11-26,2025-08-26,273,Completed,97.0
+P0265,Kenya,Gender Equality,242215.0,2025-03-29,2026-08-01,490,Delayed,56.0
+P0266,Iran,Health,455815.0,2024-10-11,2025-12-04,419,Ongoing,69.0
+P0267,Ghana,Infrastructure,207992.0,2022-01-09,2023-08-29,597,Delayed,35.0
+P0268,Iran,Environment,184601.0,2025-06-10,2025-11-15,158,Delayed,77.0
+P0269,Ethiopia,Environment,60954.0,2025-01-27,2026-10-24,635,Delayed,74.0
+P0270,Ghana,Environment,52856.0,2024-03-26,2024-08-15,142,Delayed,71.0
+P0271,Kenya,Education,27573.0,2022-07-27,2024-01-17,539,Completed,96.0
+P0272,Bangladesh,Health,496560.0,2025-02-28,2025-12-19,294,Completed,94.0
+P0273,Kenya,Infrastructure,60367.0,2023-02-08,2023-09-11,215,Ongoing,36.0
+P0274,Kenya,Education,262804.0,2022-06-01,2022-10-11,132,Completed,99.0
+P0275,Ghana,Agriculture,386752.0,2022-02-23,2022-09-11,200,Ongoing,59.0
+P0276,Ethiopia,Infrastructure,347918.0,2025-02-17,2025-11-16,272,Completed,99.0
+P0277,Kenya,Gender Equality,48752.0,2023-09-20,2024-03-22,184,Cancelled,12.0
+P0278,Uganda,Infrastructure,342173.0,2023-08-10,2024-11-15,463,Ongoing,73.0
+P0279,Jordan,Infrastructure,173757.0,2025-12-14,2027-08-15,609,Delayed,23.0
+P0280,Nepal,Environment,417426.0,2025-12-16,2027-03-10,449,Completed,97.0
+P0281,Nepal,Infrastructure,338837.0,2022-04-14,2023-04-19,370,Delayed,75.0
+P0282,Kenya,Gender Equality,141739.0,2022-09-11,2023-06-22,284,Cancelled,69.0
+P0283,Uganda,Gender Equality,343105.0,2025-06-04,2026-03-15,284,Ongoing,12.0
+P0284,Bangladesh,Health,263009.0,2025-02-09,2025-08-10,182,Ongoing,29.0
+P0285,Tanzania,Infrastructure,281028.0,2023-05-25,2023-10-22,150,Delayed,43.0
+P0286,Tanzania,Environment,232980.0,2022-04-09,2022-08-27,140,Completed,98.0
+P0287,Ghana,Infrastructure,281609.0,2022-06-02,2023-10-07,492,Ongoing,34.0
+P0288,Nepal,Agriculture,413822.0,2024-07-02,2024-10-04,94,Ongoing,87.0
+P0289,Kenya,Agriculture,361676.0,2024-05-27,2025-12-03,555,Completed,94.0
+P0290,Tanzania,Environment,369138.0,2022-12-04,2024-10-27,693,Ongoing,26.0
+P0291,Kenya,Health,343277.0,2024-04-01,2025-12-15,623,Completed,99.0
+P0292,Ghana,Health,348412.0,2025-04-01,2026-08-08,494,Completed,94.0
+P0293,Nepal,Gender Equality,456459.0,2024-08-14,2026-04-08,602,Completed,91.0
+P0294,Iran,Gender Equality,213456.0,2022-06-10,2023-04-28,322,Cancelled,57.0
+P0295,Jordan,Education,56653.0,2024-03-11,2025-11-14,613,Ongoing,69.0
+P0296,Jordan,Environment,182729.0,2023-02-02,2024-04-12,435,Cancelled,72.0
+P0297,Tanzania,Infrastructure,458168.0,2025-07-24,2025-12-06,135,Ongoing,95.0
+P0298,Jordan,Environment,440396.0,2024-03-26,2025-12-21,635,Completed,94.0
+P0299,Iran,Education,253504.0,2025-11-16,2026-05-02,167,Ongoing,97.0
+P0300,Kenya,Gender Equality,146829.0,2025-03-04,2025-08-13,162,Ongoing,81.0
+P0301,Ghana,Environment,153377.0,2025-05-03,2026-04-06,338,Completed,92.0
+P0302,Iran,Environment,496627.0,2023-02-05,2023-06-21,136,Ongoing,73.0
+P0303,Ghana,Gender Equality,26622.0,2023-10-02,2024-04-29,210,Completed,96.0
+P0304,Ghana,Education,73756.0,2024-11-22,2025-09-21,303,Ongoing,90.0
+P0305,Nepal,Gender Equality,65809.0,2023-11-19,2024-10-12,328,Ongoing,81.0
+P0306,Kenya,Health,41725.0,2023-04-05,2023-08-28,145,Completed,99.0
+P0307,Uganda,Infrastructure,217468.0,2024-08-12,2025-10-25,439,Completed,94.0
+P0308,Jordan,Gender Equality,76226.0,2023-04-15,2023-10-28,196,Delayed,53.0
+P0309,Uganda,Education,106182.0,2025-10-30,2026-03-16,137,Ongoing,91.0
+P0310,Nepal,Agriculture,54402.0,2024-11-11,2026-09-04,662,Completed,97.0
+P0311,Ghana,Health,29263.0,2024-01-20,2025-03-21,426,Cancelled,41.0
+P0312,Tanzania,Agriculture,252595.0,2022-02-07,2022-06-02,115,Completed,90.0
+P0313,Jordan,Gender Equality,202900.0,2022-08-18,2023-07-30,346,Ongoing,54.0
+P0314,Jordan,Health,72924.0,2025-10-20,2026-01-25,97,Cancelled,98.0
+P0315,Kenya,Infrastructure,361326.0,2023-07-17,2024-06-23,342,Completed,92.0
+P0316,Ethiopia,Gender Equality,249137.0,2023-03-14,2024-04-09,392,Completed,92.0
+P0317,India,Infrastructure,477268.0,2025-07-30,2025-12-22,145,Completed,98.0
+P0318,India,Environment,429880.0,2022-01-27,2023-10-04,615,Completed,94.0
+P0319,India,Agriculture,322881.0,2022-08-14,2024-02-28,563,Completed,98.0
+P0320,Ethiopia,Health,388476.0,2025-07-24,2025-11-18,117,Ongoing,60.0
+P0321,Kenya,Infrastructure,376707.0,2024-03-08,2024-08-22,167,Completed,98.0
+P0322,Ethiopia,Education,185445.0,2022-10-11,2023-08-12,305,Ongoing,50.0
+P0323,India,Infrastructure,192469.0,2024-05-28,2025-09-15,475,Cancelled,26.0
+P0324,Nepal,Education,415719.0,2024-08-17,2025-11-14,454,Delayed,49.0
+P0325,Iran,Gender Equality,126371.0,2023-03-29,2024-12-03,615,Ongoing,55.0
+P0326,Ghana,Health,63709.0,2024-10-16,2025-11-21,401,Completed,90.0
+P0327,Ethiopia,Infrastructure,217192.0,2024-03-26,2024-06-30,96,Ongoing,88.0
+P0328,Kenya,Infrastructure,175322.0,2023-10-21,2024-01-21,92,Ongoing,89.0
+P0329,Kenya,Health,46172.0,2023-07-01,2024-09-25,452,Ongoing,63.0
+P0330,Uganda,Infrastructure,36555.0,2025-04-30,2026-12-18,597,Completed,91.0
+P0331,Iran,Education,496833.0,2024-12-08,2025-12-06,363,Delayed,37.0
+P0332,Tanzania,Infrastructure,78276.0,2022-01-17,2023-09-04,595,Ongoing,42.0
+P0333,Jordan,Agriculture,82492.0,2025-04-10,2025-07-23,104,Completed,94.0
+P0334,India,Gender Equality,,2025-05-28,2026-03-05,281,Ongoing,49.0
+P0335,Tanzania,Environment,281010.0,2022-06-07,2024-01-02,574,Ongoing,41.0
+P0336,Uganda,Education,376743.0,2023-04-22,2023-08-17,117,Delayed,38.0
+P0337,India,Agriculture,490571.0,2024-12-05,2025-04-12,128,Delayed,50.0
+P0338,Iran,Gender Equality,247320.0,2025-10-28,2026-10-25,362,Delayed,79.0
+P0339,Uganda,Health,442978.0,2023-06-02,2024-04-17,320,Completed,93.0
+P0340,India,Education,36046.0,2022-04-09,2022-10-01,175,Ongoing,42.0
+P0341,Iran,Environment,253071.0,2024-11-26,2026-06-12,563,Ongoing,86.0
+P0342,Bangladesh,Gender Equality,403165.0,2022-10-07,2023-05-10,215,Completed,99.0
+P0343,Tanzania,Environment,446985.0,2025-10-04,2027-06-22,626,Completed,98.0
+P0344,Tanzania,Health,209374.0,2023-05-12,2024-01-01,234,Delayed,79.0
+P0345,Jordan,Health,441366.0,2022-10-29,2024-07-04,614,Completed,96.0
+P0346,Iran,Education,486463.0,2022-06-30,2023-04-27,301,Ongoing,99.0
+P0347,Ethiopia,Infrastructure,291997.0,2023-08-30,2023-12-22,114,Completed,95.0
+P0348,Bangladesh,Health,145900.0,2025-01-27,2026-11-27,669,Completed,96.0
+P0349,Nepal,Gender Equality,440008.0,2023-12-01,2025-03-28,483,Completed,90.0
+P0350,India,Infrastructure,84129.0,2024-09-19,2025-02-22,156,Cancelled,58.0
+P0351,Bangladesh,Agriculture,262091.0,2025-02-13,2026-01-01,322,Delayed,38.0
+P0352,Iran,Environment,230550.0,2022-07-10,2023-01-24,198,Cancelled,70.0
+P0353,Ghana,Infrastructure,269883.0,2022-09-10,2023-05-03,235,Ongoing,76.0
+P0354,India,Environment,139130.0,2024-09-07,2025-03-26,200,Completed,90.0
+P0355,Kenya,Infrastructure,485514.0,2024-07-16,2025-05-29,317,Ongoing,18.0
+P0356,Tanzania,Agriculture,450203.0,2025-03-30,2025-10-16,200,Ongoing,15.0
+P0357,Iran,Health,171922.0,2025-07-03,2027-01-13,559,Delayed,68.0
+P0358,Kenya,Agriculture,430328.0,2025-09-08,2026-01-09,123,Completed,97.0
+P0359,Jordan,Health,146789.0,2022-05-08,2023-08-09,458,Ongoing,50.0
+P0360,Uganda,Health,180130.0,2022-01-18,2023-12-03,684,Completed,91.0
+P0361,Nepal,Environment,201492.0,2023-07-20,2025-04-23,643,Completed,99.0
+P0362,Nepal,Gender Equality,63890.0,2023-07-24,2024-12-19,514,Delayed,65.0
+P0363,Kenya,Agriculture,91017.0,2025-09-08,2027-05-08,607,Ongoing,59.0
+P0364,Tanzania,Infrastructure,203376.0,2023-11-17,2024-11-22,371,Ongoing,71.0
+P0365,Jordan,Agriculture,188993.0,2023-09-18,2024-10-31,409,Ongoing,93.0
+P0366,Ghana,Environment,157596.0,2025-08-04,2027-01-18,532,Ongoing,71.0
+P0367,Tanzania,Health,125424.0,2024-05-03,2025-06-11,404,Delayed,38.0
+P0368,Bangladesh,Environment,302192.0,2024-08-19,2025-11-28,466,Delayed,41.0
+P0369,Nepal,Education,453327.0,2022-06-04,2023-06-17,378,Cancelled,93.0
+P0370,Bangladesh,Education,193976.0,2023-05-05,2024-10-12,526,Delayed,43.0
+P0371,India,Infrastructure,342056.0,2025-11-10,2026-11-11,366,Completed,100.0
+P0372,Ethiopia,Environment,59008.0,2024-02-24,2025-12-26,671,Ongoing,15.0
+P0373,Iran,Infrastructure,418276.0,2025-02-01,2026-09-16,592,Ongoing,67.0
+P0374,Jordan,Infrastructure,230738.0,2025-11-17,2027-07-15,605,Completed,98.0
+P0375,Tanzania,Education,108559.0,2022-09-03,2023-11-16,439,Delayed,64.0
+P0376,Nepal,Infrastructure,80337.0,2025-04-14,2026-10-01,535,Completed,96.0
+P0377,Bangladesh,Education,397760.0,2024-11-28,2026-02-10,439,Delayed,31.0
+P0378,Uganda,Health,300494.0,2024-01-29,2025-12-25,696,Ongoing,69.0
+P0379,India,Environment,49354.0,2023-06-22,2024-02-03,226,Ongoing,23.0
+P0380,Iran,Infrastructure,70186.0,2024-07-09,2025-06-06,332,Ongoing,84.0
+P0381,Iran,Education,53145.0,2023-02-12,2024-11-05,632,Delayed,49.0
+P0382,Tanzania,Agriculture,452236.0,2023-06-09,2023-10-16,129,Ongoing,21.0
+P0383,Jordan,Infrastructure,111123.0,2024-04-07,2025-02-19,318,Ongoing,96.0
+P0384,Ghana,Gender Equality,231258.0,2024-06-21,2026-03-20,637,Completed,95.0
+P0385,Uganda,Health,241541.0,2022-02-05,2022-12-14,312,Ongoing,22.0
+P0386,Tanzania,Health,45581.0,2023-11-16,2024-02-19,95,Completed,90.0
+P0387,Bangladesh,Agriculture,113929.0,2022-01-20,2023-03-07,411,Delayed,77.0
+P0388,Ethiopia,Education,310195.0,2022-11-17,2024-05-27,557,Ongoing,28.0
+P0389,Kenya,Infrastructure,76474.0,2023-05-27,2023-11-07,164,Ongoing,64.0
+P0390,Ghana,Education,116748.0,2023-02-04,2023-05-08,93,Completed,90.0
+P0391,Jordan,Health,150995.0,2023-10-16,2024-05-10,207,Completed,91.0
+P0392,India,Education,270690.0,2024-08-29,2026-07-25,695,Delayed,57.0
+P0393,Ghana,Health,356770.0,2023-04-16,2024-11-29,593,Completed,95.0
+P0394,Nepal,Education,294104.0,2025-03-12,2027-01-04,663,Completed,95.0
+P0395,Jordan,Agriculture,453988.0,2025-01-20,2026-07-04,530,Completed,91.0
+P0396,Ethiopia,Environment,439736.0,2025-10-09,2026-07-19,283,Cancelled,53.0
+P0397,Nepal,Agriculture,205553.0,2024-04-13,2025-08-07,481,Delayed,72.0
+P0398,Ghana,Agriculture,61408.0,2023-12-28,2024-04-21,115,Ongoing,79.0
+P0399,Kenya,Environment,381150.0,2024-05-03,2025-10-09,524,Completed,90.0
+P0400,Kenya,Environment,284568.0,2022-02-20,2022-11-09,262,Completed,99.0
+P0401,Ethiopia,Infrastructure,344278.0,2023-07-29,2024-08-21,389,Delayed,50.0
+P0402,Iran,Infrastructure,176563.0,2025-04-28,2026-06-17,415,Ongoing,46.0
+P0403,Uganda,Agriculture,157413.0,2025-02-22,2026-07-06,499,Completed,94.0
+P0404,India,Agriculture,200695.0,2022-05-30,2022-12-23,207,Completed,94.0
+P0405,Iran,Health,115327.0,2022-11-10,2023-09-20,314,Completed,91.0
+P0406,Kenya,Health,418554.0,2023-07-24,2025-04-05,621,Ongoing,37.0
+P0407,Kenya,Infrastructure,227503.0,2025-09-27,2026-04-17,202,Delayed,55.0
+P0408,Bangladesh,Gender Equality,168326.0,2022-11-01,2023-06-18,229,Completed,95.0
+P0409,Nepal,Gender Equality,207932.0,2023-11-13,2025-08-22,648,Completed,98.0
+P0410,Ghana,Infrastructure,36344.0,2024-04-17,2024-07-16,90,Completed,91.0
+P0411,India,Health,419966.0,2024-12-13,2025-06-10,179,Cancelled,72.0
+P0412,Ethiopia,Health,472972.0,2024-09-29,2025-11-12,409,Completed,99.0
+P0413,Ghana,Gender Equality,92957.0,2023-03-20,2024-12-18,639,Delayed,38.0
+P0414,Bangladesh,Education,130423.0,2023-09-05,2024-04-20,228,Ongoing,85.0
+P0415,Kenya,Education,345197.0,2024-09-19,2026-05-12,600,Ongoing,58.0
+P0416,Ethiopia,Health,489071.0,2022-09-21,2023-09-04,348,Completed,91.0
+P0417,Kenya,Education,171968.0,2024-12-12,2025-03-21,99,Completed,92.0
+P0418,India,Environment,211833.0,2024-09-30,2025-09-15,350,Ongoing,67.0
+P0419,Nepal,Infrastructure,218624.0,2022-01-05,2022-09-23,261,Delayed,67.0
+P0420,Ghana,Infrastructure,276147.0,2025-01-31,2025-05-13,102,Ongoing,33.0
+P0421,Ghana,Health,102454.0,2025-05-04,2026-01-16,257,Ongoing,29.0
+P0422,Iran,Agriculture,282594.0,2024-02-13,2025-12-29,685,Completed,96.0
+P0423,Ethiopia,Gender Equality,377744.0,2024-05-26,2025-07-10,410,Cancelled,13.0
+P0424,Uganda,Health,409876.0,2024-09-18,2025-10-31,408,Delayed,64.0
+P0425,Bangladesh,Education,446151.0,2024-06-02,2025-07-25,418,Completed,95.0
+P0426,Uganda,Gender Equality,62641.0,2025-10-05,2027-07-06,639,Cancelled,33.0
+P0427,Iran,Agriculture,54711.0,2022-02-16,2023-07-09,508,Ongoing,59.0
+P0428,India,Education,357486.0,2024-05-16,2026-04-11,695,Ongoing,58.0
+P0429,Bangladesh,Environment,394040.0,2024-04-02,2024-10-03,184,Delayed,55.0
+P0430,Nepal,Education,168254.0,2024-07-24,2026-05-25,670,Delayed,49.0
+P0431,Uganda,Environment,112833.0,2023-10-18,2024-11-28,407,Ongoing,75.0
+P0432,Nepal,Gender Equality,343420.0,2022-09-26,2023-08-17,325,Completed,97.0
+P0433,Uganda,Environment,306685.0,2023-01-05,2024-03-03,423,Completed,97.0
+P0434,Nepal,Gender Equality,381601.0,2023-09-28,2025-01-05,465,Cancelled,45.0
+P0435,Uganda,Gender Equality,69813.0,2025-02-03,2026-08-05,548,Completed,95.0
+P0436,Nepal,Gender Equality,193270.0,2023-10-19,2024-06-01,226,Ongoing,48.0
+P0437,Iran,Gender Equality,164892.0,2022-04-30,2024-03-07,677,Ongoing,51.0
+P0438,Jordan,Gender Equality,311214.0,2024-04-10,2026-01-06,636,Ongoing,67.0
+P0439,Bangladesh,Education,487984.0,2024-12-17,2026-08-11,602,Ongoing,21.0
+P0440,Ethiopia,Gender Equality,429338.0,2025-10-01,2026-10-21,385,Cancelled,12.0
+P0441,India,Education,367703.0,2024-01-11,2025-02-23,409,Completed,100.0
+P0442,Tanzania,Gender Equality,229615.0,2022-04-27,2024-02-17,661,Completed,99.0
+P0443,Kenya,Environment,66786.0,2024-03-01,2025-05-13,438,Completed,92.0
+P0444,Ethiopia,Gender Equality,251006.0,2025-02-24,2026-01-08,318,Delayed,74.0
+P0445,Kenya,Agriculture,255876.0,2025-11-17,2026-11-11,359,Ongoing,35.0
+P0446,Bangladesh,Gender Equality,424953.0,2024-10-09,2025-10-24,380,Completed,92.0
+P0447,Ethiopia,Gender Equality,323206.0,2024-12-17,2025-08-28,254,Delayed,68.0
+P0448,Nepal,Environment,472453.0,2023-09-26,2023-12-29,94,Delayed,74.0
+P0449,Nepal,Infrastructure,338715.0,2023-05-28,2024-09-07,468,Delayed,52.0
+P0450,Tanzania,Environment,312654.0,2024-03-12,2024-08-26,167,Delayed,37.0
+P0451,Kenya,Agriculture,306570.0,2025-01-24,2026-06-07,499,Completed,90.0
+P0452,India,Infrastructure,62265.0,2025-02-15,2026-12-10,663,Delayed,71.0
+P0453,Bangladesh,Health,436066.0,2023-07-14,2024-02-20,221,Ongoing,46.0
+P0454,Nepal,Health,274321.0,2023-05-03,2025-03-23,690,Delayed,68.0
+P0455,Jordan,Agriculture,91150.0,2025-06-14,2025-10-23,131,Delayed,78.0
+P0456,Iran,Environment,112312.0,2024-06-15,2024-12-10,178,Delayed,47.0
+P0457,Iran,Education,114613.0,2025-07-19,2026-11-22,491,Ongoing,71.0
+P0458,Uganda,Agriculture,362054.0,2025-04-27,2026-05-17,385,Completed,96.0
+P0459,India,Infrastructure,339519.0,2023-12-05,2024-12-23,384,Ongoing,23.0
+P0460,Iran,Infrastructure,146826.0,2023-08-04,2025-04-10,615,Cancelled,98.0
+P0461,Uganda,Gender Equality,60435.0,2024-02-29,2025-07-24,511,Cancelled,93.0
+P0462,Kenya,Health,383587.0,2024-05-10,2024-08-30,112,Completed,94.0
+P0463,Nepal,Infrastructure,475348.0,2022-09-04,2024-06-29,664,Completed,93.0
+P0464,Nepal,Agriculture,235017.0,2025-01-04,2025-08-24,232,Completed,99.0
+P0465,Jordan,Infrastructure,159055.0,2022-06-03,2023-01-23,234,Delayed,78.0
+P0466,Ethiopia,Agriculture,176734.0,2025-12-29,2026-11-08,314,Delayed,66.0
+P0467,Iran,Education,310654.0,2024-09-23,2026-05-08,592,Completed,93.0
+P0468,Kenya,Gender Equality,234259.0,2025-01-14,2025-07-26,193,Ongoing,44.0
+P0469,Ghana,Health,197070.0,2023-11-28,2024-04-04,128,Delayed,30.0
+P0470,Iran,Infrastructure,475062.0,2025-08-01,2026-05-15,287,Delayed,76.0
+P0471,India,Agriculture,119071.0,2025-05-28,2027-03-27,668,Ongoing,49.0
+P0472,Ethiopia,Environment,293784.0,2024-12-28,2026-04-22,480,Ongoing,85.0
+P0473,Iran,Health,331691.0,2024-12-06,2025-08-31,268,Ongoing,65.0
+P0474,Kenya,Education,341764.0,2024-10-05,2026-07-10,643,Completed,93.0
+P0475,Iran,Agriculture,171389.0,2022-04-04,2023-09-23,537,Ongoing,54.0
+P0476,India,Gender Equality,140608.0,2024-08-15,2026-03-27,589,Ongoing,32.0
+P0477,Ghana,Gender Equality,294708.0,2024-10-08,2025-01-20,104,Delayed,79.0
+P0478,Bangladesh,Education,183417.0,2023-03-29,2024-04-10,378,Ongoing,40.0
+P0479,Tanzania,Education,138824.0,2025-05-12,2026-11-30,567,Delayed,73.0
+P0480,Ghana,Gender Equality,279444.0,2024-06-30,2025-05-16,320,Completed,95.0
+P0481,Uganda,Infrastructure,104273.0,2022-08-06,2023-12-28,509,Ongoing,76.0
+P0482,Iran,Infrastructure,362003.0,2023-04-19,2023-12-21,246,Completed,97.0
+P0483,Nepal,Agriculture,236837.0,2023-03-08,2024-12-06,639,Completed,97.0
+P0484,Jordan,Environment,135017.0,2022-12-07,2024-05-20,530,Delayed,64.0
+P0485,Nepal,Agriculture,492254.0,2023-07-05,2024-01-07,186,Cancelled,19.0
+P0486,Ghana,Environment,148618.0,2025-08-05,2026-12-18,500,Completed,94.0
+P0487,Nepal,Education,470609.0,2025-07-01,2026-07-14,378,Ongoing,10.0
+P0488,Kenya,Health,484297.0,2022-12-23,2023-12-01,343,Delayed,52.0
+P0489,Nepal,Agriculture,150341.0,2022-01-23,2022-11-04,285,Completed,95.0
+P0490,Ethiopia,Agriculture,316574.0,2023-06-06,2025-04-23,687,Ongoing,17.0
+P0491,Bangladesh,Environment,231604.0,2025-01-28,2026-10-01,611,Delayed,36.0
+P0492,Iran,Education,52788.0,2024-03-12,2025-11-08,606,Ongoing,85.0
+P0493,Nepal,Education,251577.0,2025-04-18,2025-11-11,207,Completed,93.0
+P0494,India,Environment,466759.0,2025-05-31,2026-02-03,248,Ongoing,66.0
+P0495,Bangladesh,Education,432135.0,2024-02-01,2024-12-14,317,Delayed,25.0
+P0496,Bangladesh,Gender Equality,356490.0,2023-03-18,2024-01-17,305,Ongoing,93.0
+P0497,Nepal,Infrastructure,383266.0,2024-02-08,2024-05-22,104,Completed,100.0
+P0498,Bangladesh,Gender Equality,64974.0,2024-10-12,2025-06-15,246,Delayed,23.0
+P0499,Jordan,Health,394453.0,2025-09-10,2026-08-26,350,Completed,98.0
+P0500,Nepal,Agriculture,41371.0,2023-05-31,2024-02-01,246,Delayed,39.0
+P0021,Nepal,Gender Equality,402177.0,2024-03-16,2025-02-21,342,Cancelled,46.0
+P0022,Iran,Agriculture,101077.0,2023-01-21,2024-08-31,588,Completed,99.0
+P0023,Ghana,Agriculture,377618.0,2025-04-30,2025-09-01,124,Cancelled,57.0
