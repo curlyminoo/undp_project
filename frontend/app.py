@@ -61,6 +61,9 @@ if upload_file is not None:
             st.stop()
 
     df = st.session_state["df"]
+    st.info(
+    f"📄 Current dataset: **{st.session_state.get('uploaded_file_name', 'Unknown')}**")
+    
     categorical_columns = df.select_dtypes(include="object").columns.tolist()
     numeric_columns = df.select_dtypes(include="number").columns.tolist()
 
